@@ -1,0 +1,100 @@
+.facts {
+  padding: 5rem 2rem;
+  background-color: #FFFFFF;
+}
+
+.facts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.facts-header {
+  max-width: 600px;
+  margin-bottom: 3.5rem;
+}
+
+.facts-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #131313;
+  margin-bottom: 1rem;
+}
+
+.facts-header p {
+  color: #727272;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.fact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+  border: 1px solid #FF900E;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.fact-card:hover {
+  transform: translateY(-10px);
+}
+
+.fact-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+  color: #FF900E;
+}
+
+.fact-card h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #131313;
+  margin-bottom: 0.5rem;
+}
+
+.fact-card p {
+  color: #727272;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Temporary icon styles until we get the real icons */
+.fact-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: #FF900E;
+}
+
+@media (max-width: 992px) {
+  .facts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .facts {
+    padding: 3rem 1rem;
+  }
+  
+  .facts-header h2 {
+    font-size: 2rem;
+  }
+  
+  .facts-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .fact-card {
+    padding: 2rem 1rem;
+  }
+} 
